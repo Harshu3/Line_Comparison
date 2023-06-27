@@ -17,7 +17,7 @@ namespace Line_Comparison
             Console.Write(" Y2 = ");
             double y2 = double.Parse((Console.ReadLine()));
             double LenghtOfLine = Math.Sqrt(Math.Pow((x2 - x1), 2) + Math.Pow((y2 - y1), 2));
-            Console.Write($"Lenght of a Line = {LenghtOfLine}\n");
+            Console.Write($" Lenght of a Line = {LenghtOfLine}\n");
         }
         static void Main(string[] args)
         {
