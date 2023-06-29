@@ -34,14 +34,13 @@ namespace Line_Comparison
             double LengthofLine2 = Math.Sqrt(Math.Pow((x4 - x3), 2) + Math.Pow((y4 - y3), 2));
             Console.WriteLine($"Length of Second Line = {LengthofLine2}");
 
-            if (LenghtOfLine1 == LengthofLine2)
-            {
-                Console.WriteLine("First Line and Second Lines are Equal");
-            }
+            int result = LenghtOfLine1.CompareTo(LengthofLine2);
+            if (result > 0)
+                Console.WriteLine("First Line is Greater than Second Line");
+            else if (result < 0)
+                Console.WriteLine("Second Line is Greater than First Line");
             else
-            {
-                Console.WriteLine("First Line and Second Lines are not Equal");
-            }
+                Console.WriteLine("Both the Lines are Equal");
         }
         static void Main(string[] args)
         {
